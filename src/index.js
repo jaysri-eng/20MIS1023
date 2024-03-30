@@ -5,12 +5,14 @@ import './index.css';
 // import reportWebVitals from './reportWebVitals';
 import AllProductsPage from './1/getAllproducts';
 import FilterForm from './1/form';
+import Calculator from './2/calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AllProductsPage />
     <FilterForm />
+    <Calculator />
   </React.StrictMode>
 );
 

@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+public
+
 # production
 /build
 
@@ -25,10 +27,7 @@ yarn-error.log*
 # src/App.js
 # src/App.css
 # src/App.test.js
-src/index.css
-src/logo.svg
-src/reportWebVitals.js
-src/setupTests.js
+# src/index.css
 
 package-lock.json
 package.json

@@ -28,7 +28,10 @@ const AllProductsPage = () => {
         filters.category,
         filters.n,
         filters.minPrice,
-        filters.maxPrice
+        filters.maxPrice,
+        {
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzExNzkzNDM1LCJpYXQiOjE3MTE3OTMxMzUsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjNhMzdjNjlkLTU5N2UtNDg2ZC05NmIyLWY2OWRhNzIyZjZiYSIsInN1YiI6ImpheWFudGhzcmluaXZhc2FuLnIyMDIwQHZpdHN0dWRlbnQuYWMuaW4ifSwiY29tcGFueU5hbWUiOiJwYXJhZG94IiwiY2xpZW50SUQiOiIzYTM3YzY5ZC01OTdlLTQ4NmQtOTZiMi1mNjlkYTcyMmY2YmEiLCJjbGllbnRTZWNyZXQiOiJvdGVsUVdPWm5QTlZRcFdiIiwib3duZXJOYW1lIjoiamF5YW50aCIsIm93bmVyRW1haWwiOiJqYXlhbnRoc3Jpbml2YXNhbi5yMjAyMEB2aXRzdHVkZW50LmFjLmluIiwicm9sbE5vIjoiMjBNSVMxMDIzIn0.YdEv-FQlAN4i8WbVgFKGff1quUCVsnXxImOrUm9Ir_s',
+        }
       );
       setProducts(data);
     };
@@ -37,7 +40,7 @@ const AllProductsPage = () => {
 
   const handleFilterChange = (newFilters) => {
     setFilters((prevFilters) => ({
-      ...prevFilters,
+      ...prevFilters, 
       ...newFilters,
     }));
   };

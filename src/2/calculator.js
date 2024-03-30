@@ -26,7 +26,7 @@ function Calculator() {
       <h1>Average Calculator</h1>
       <input
         type="text"
-        placeholder="Enter numbers separated by comma"
+        placeholder="Enter numbers"
         value={numbers}
         onChange={(e) => setNumbers(e.target.value)}
       />
